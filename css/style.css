@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/** Global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: none;
+    padding: 0 20px 0 20px;
+    color: #ffffff;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
+/** Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right; 
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.forMobile{
+    display: none;
+}
+
+/** Showcase */
+#showcase {
+   min-height: 400px; 
+   background: url('../images/showcase.jpg') no-repeat 0 -600px;
+   text-align: center;
+   color: #ffffff;
+}
+
+#showcase h1 {
+    margin: 100px 0 10px 0;
+    font-size: 55px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/** Newsletter */
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    padding-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/** Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box a {
+    pointer-events: none;
+    cursor: default;
+}
+
+#boxes .box img {
+    width: 90px;
+    height: 90px;
+}
+
+/** About Page Sidebar */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/** About Page Main-col */
+article#main-col {
+    float:left;
+    width: 65%;
+}
+
+/** CSS Page */
+ul#css li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+
+/** Media Queries */
+/** Tablets are ~768px */
+@media(max-width: 768px) {
+    #newsletter h1, #newsletter form, article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .forWeb {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+    
+    .forMobile {
+        display: inline-block;
+        font-size: 1em;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        background-color: #000000;
+    }
+
+    .forMobile img {
+        height: 50px;
+        color: white;
+    }
+
+    .forMobile ul li {
+        padding: 3% 0 2% 8%;
+        margin-left: 3%;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    
+    button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    #boxes .box a {
+        pointer-events: auto;
+    }
+    #boxes .container p {
+        display: none;
+
+    }
+}
+
+/** Tablets are ~768px */
+@media(max-width: 600px) {
+    #newsletter h1, #newsletter form, article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .forWeb {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+    
+    .forMobile {
+        display: inline-block;
+        font-size: 1em;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        background-color: #000000;
+    }
+
+    .forMobile img {
+        height: 30px;
+        color: white;
+    }
+
+    .forMobile ul li {
+        padding: 3% 0 2% 8%;
+        margin-left: 3%;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+    
+    button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    #boxes .box a {
+        pointer-events: auto;
+    }
+    #boxes .container p {
+        display: none;
+
+    }
+}
