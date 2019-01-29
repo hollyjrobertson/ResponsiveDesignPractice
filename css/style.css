@@ -189,14 +189,12 @@ aside#sidebar .quote input, aside#sidebar .quote textarea {
         text-align: center;
         width: 100%;
     }
-
-    header {
-        border: none;
-        background-color: #35424a;
-    }
-
-    .forWeb {
-        display: none;
+    
+    header, .forWeb #branding, .forWeb nav {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border-color: #35424a;
     }
 
     footer {
@@ -256,11 +254,13 @@ aside#sidebar .quote input, aside#sidebar .quote textarea {
         width: 100%;
     }
 
-    header {
-        border: none;
-        background-color: #35424a;
+   header, .forWeb #branding, .forWeb nav {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border-color: #35424a;
     }
-    
+
     .forWeb {
         display: none;
     }
