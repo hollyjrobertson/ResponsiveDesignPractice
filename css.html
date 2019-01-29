@@ -3,29 +3,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Learnings CSS | CSS </title>
+    <title>Web Design | CSS </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Learning</span> CSS</h1>
+            <div class="forWeb">
+                <div id="branding">
+                    <h1><span class="highlight">Learning</span> Responsive Web Design</h1>
+                </div>
+                    <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="about.html">About</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                    </ul>
+                 </nav>
+                </div>
             </div>
-            <nav>
+        <div class="container">
+            <div class="forMobile">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="current"><a href="css.html">CSS</a></li>
-                </ul>
-            </nav>
+                    <li class="current"><a href="index.html"><img src="images/index.png" alt="Home"></a></li>
+                    <li class="current"><a href="about.html"><img src="images/about.png" alt="Home"></a></li>
+                    <li class="current"><a href="css.html"><img src="images/resume.png" alt="Home"></a></li>
+                    <li class="current"><a href="index.html"><img src="images/portfolio.png" alt="Home"></a></li>
+                    <li class="current"><a href="css.html"><img src="images/contact.png" alt="Home"></a></li>
+                </ul>           
+            </div>
         </div>
     </header>
     <section id="newsletter">
         <div class="container">
             <h1>Subscribe to our newsletter</h1>
             <form>
-                <input type="email" placeholder="Enter email" name="email">
+                <input type="email" placeholder="**In Progress**" name="email">
                 <button type="submit" class="button_1">Subscribe</button>
             </form>
         </div>
@@ -37,15 +50,15 @@
                     <ul id="css">
                         <li>
                             <h3>Floating</h3>
-                            <p>Follow up with customers, provide feedback, and see issues through to their resolution. Recommended and oversaw procedure modifications and improvements</p>
+                            <p>The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).</p>
                         </li>
                         <li>
                             <h3>Box Model</h3>
-                            <p>Follow up with customers, provide feedback, and see issues through to their resolution. Recommended and oversaw procedure modifications and improvements</p>
+                            <p>In web development, the CSS box model refers to the composition of a webpage or HTML page from blocks or boxes using CSS. Specifically, the box model describes how the size of each such block and its content is determined through styling instructions.</p>
                         </li>
                         <li>
                             <h3>Nesting Elements</h3>
-                            <p>Follow up with customers, provide feedback, and see issues through to their resolution. Recommended and oversaw procedure modifications and improvements</p>
+                            <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator. There are four different combinators in CSS: descendant selector (space), child selector (>), adjacent siblimg selector (+), general sibling selector(~). </p>
                         </li>
             </article>
             <aside id="sidebar">
@@ -54,14 +67,14 @@
                     <form class="quote">
                         <div>
                             <label>Name</label><br>
-                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="**In Progress**">
                         </div>
                         <div>
                             <label>Email</label><br>
-                            <input type="email" placeholder="Email">
+                            <input type="email" placeholder="**In Progress**">
                         <div>
                             <label>Message</label><br>
-                            <textarea name="message" placeholder="Message"></textarea>
+                            <textarea name="message" placeholder="**In Progress**"></textarea>
                         </div>
                         <button class="button_1" type="submit">Send</button>
                     </form>

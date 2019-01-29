@@ -3,29 +3,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Learnings CSS | About </title>
+    <title>Web Design | About </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Learning</span> CSS</h1>
+            <div class="forWeb">
+                <div id="branding">
+                    <h1><span class="highlight">Learning</span> Responsive Web Design</h1>
+                </div>
+                    <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="about.html">About</a></li>
+                        <li><a href="css.html">CSS</a></li>
+                    </ul>
+                 </nav>
+                </div>
             </div>
-            <nav>
+        <div class="container">
+            <div class="forMobile">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="about.html">About</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                </ul>
-            </nav>
+                    <li class="current"><a href="index.html"><img src="images/index.png" alt="Home"></a></li>
+                    <li class="current"><a href="about.html"><img src="images/about.png" alt="Home"></a></li>
+                    <li class="current"><a href="css.html"><img src="images/resume.png" alt="Home"></a></li>
+                    <li class="current"><a href="index.html"><img src="images/portfolio.png" alt="Home"></a></li>
+                    <li class="current"><a href="css.html"><img src="images/contact.png" alt="Home"></a></li>
+                </ul>           
+            </div>
         </div>
     </header>
     <section id="newsletter">
         <div class="container">
             <h1>Subscribe to our newsletter</h1>
             <form>
-                <input type="email" placeholder="Enter email" name="email">
+                <input type="email" placeholder="**In Progress**" name="email">
                 <button type="submit" class="button_1">Subscribe</button>
             </form>
         </div>
